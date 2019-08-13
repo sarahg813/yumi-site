@@ -10,7 +10,8 @@ import {
   Grid,
   SwipeableDrawer,
   MenuList,
-  MenuItem
+  MenuItem,
+  Typography
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
@@ -44,7 +45,7 @@ const styleSheet = {
   title: {
     color: "#8c4eb8",
     fontFamily: "Oranienbaum",
-    fontSize: "1.75rem"
+    fontSize: "2rem"
   },
   toolbar: {
     display: "flex"
@@ -92,6 +93,10 @@ class Navbar extends Component {
                   this.setState({ drawer: true });
                 }}
               />
+              <Typography variant="headline" className={classes.title}>
+                YUMIKO HARRIS
+              </Typography>
+              <Typography color="inherit" variant="headline" />
             </Grid>
           </Toolbar>
         </AppBar>
@@ -124,7 +129,7 @@ class Navbar extends Component {
                 button
                 divider
               >
-                <h1>Yumiko Harris</h1>
+                Home
               </MenuItem>
               <MenuItem
                 className={classes.item}
