@@ -9,7 +9,12 @@ import Bookings from "./components/Bookings";
 import Classes from "./components/Classes";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import theme from "./theme";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+library.add(fab, faEnvelope, faPhone);
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -44,6 +49,7 @@ function App() {
               <Route path="/bookings" component={Bookings} />
               <Route path="/contact" component={Contact} />
             </Container>
+            <Footer />
           </div>
         </BrowserRouter>
       </MuiThemeProvider>
