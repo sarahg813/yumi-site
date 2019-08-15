@@ -7,7 +7,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Bookings from "./components/Bookings";
 import Classes from "./components/Classes";
-import Gallery from "./components/Gallery";
+import ImageGallery from "./components/ImageGallery";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import theme from "./theme";
@@ -44,7 +44,7 @@ function App() {
             <Container component="main" className={classes.main}>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
-              <Route path="/gallery" component={Gallery} />
+              <Route path="/gallery" component={ImageGallery} />
               <Route path="/classes" component={Classes} />
               <Route path="/bookings" component={Bookings} />
               <Route path="/contact" component={Contact} />
