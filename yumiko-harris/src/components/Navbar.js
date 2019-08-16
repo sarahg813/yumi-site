@@ -39,8 +39,9 @@ const styleSheet = {
   },
   button: {
     margin: 1,
-    color: "#fff",
-    fontFamily: "Roboto"
+    color: "#ff00ff",
+    fontWeight: "bold",
+    fontFamily: "Bad Script"
   },
   title: {
     color: "#8c4eb8",
